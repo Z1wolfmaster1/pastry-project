@@ -1,0 +1,13 @@
+span {
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+form {
+  width: 200px;
+}
+
+.submitInput {
+  width: auto;
+}

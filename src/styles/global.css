@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0074b7;
+  background-image: linear-gradient(160deg, #0074b7 0%, #6cada5 100%);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  position: fixed;
+  padding: 5px 0px 0px 5px;
+}
+
+#navform {
+  width: 250px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.submitInput, button {background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%)}
+.submitInput, button {
+    margin: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+}
+
+.submitInput:hover, button:hover {
+  cursor: pointer;
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+#backForm .submitInput {
+  width: auto;
+}
+
+input + input {
+  margin-top: 10px;
+}
+
+.inputLabel {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  margin-left: -6rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(-0.5rem);
+  color: #fff;
+}
+
+.textInput {
+  font-family: sans-serif;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.textInput:placeholder-shown + .inputLabel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
